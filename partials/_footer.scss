@@ -1,0 +1,83 @@
+.footer{
+    position: relative;
+    overflow: hidden;
+
+    & .shape__big,
+    & .shape__small{
+        position: absolute;
+    }
+
+    & .shape__big{
+        width: 300px;
+        height: 300px;
+        left: -12rem;
+        top: 6rem;
+    }
+
+    & .shap__small{
+        right: -13rem;
+        bottom: -6rem;
+    }
+
+    &__container{
+        row-gap: 2.5rem;
+        position: relative;
+    }
+
+    &__logo{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        color: $title-color;
+        font-size: $h2-font-size;
+        font-weight: $font-semi-bold;
+        margin-bottom: 1.25rem;
+        transition: .3s;
+
+        & i{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        &:hover{
+            color: $first-color;
+        }
+    }
+
+    &__title{
+        font-size: $h3-font-size;
+        margin-bottom: 1.25rem;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    
+        &, &-link{
+            color: $text-color;
+            transform: .3s;
+        }
+
+        &:hover, &-link:hover{
+            color: $title-color;
+        }
+    }
+
+    &__social{
+        display: flex;
+        column-gap: 1.5rem;
+    
+        &-link{
+            font-size: 1.25rem;
+        }
+    }
+
+    &__copy{
+        display: block;
+        margin-top: 4.5rem;
+        text-align: center;
+        font-size: $smaller-font-size;
+        color: $text-color-light;
+    }
+}

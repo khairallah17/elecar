@@ -1,0 +1,286 @@
+/* For Small Devices */
+@media (max-width: 320px) {
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home__car{
+        column-gap: 2rem;
+    }
+
+    .about__card{
+        width: 150px;
+    }
+
+    .offer__container{
+        grid-template-rows: max-content 180px;
+    }
+
+    .offer__img{
+        width: 340px;
+    }
+
+    .logos__container{
+        gap: 2.5rem;
+    }
+}
+
+/* For Medium Devices */
+@media (min-width: 576px) {
+    .about__group{
+        width: 350px;
+        justify-self: center;
+    }
+
+    .features__map{
+        right: 0;
+        left: 0;
+    }
+
+    .featured__container{
+        grid-template-columns: repeat(2, 228px);
+    }
+
+    .offer__container{
+        grid-template-columns: .5fr;
+        grid-template-rows: initial;
+        justify-content: center;
+    }
+
+    .offer__img{
+        position: relative;
+        bottom: initial;
+        right: initial;
+    }
+}
+
+@media (min-width: 767px) {
+    .section{
+        padding: 7rem 0 2rem;
+    }
+
+    .nav{
+        height: calc($header-height + 1.5rem);
+    }
+
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+
+    .nav__list{
+        flex-direction: row;
+        column-gap: 3rem;
+        padding-top: 0;
+    }
+
+    .nav__link{
+        font-size: $normal-font-size;
+        text-transform: initial;
+    }
+
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos__container{
+        gap: 4rem 8rem;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For Large Devices */
+
+@media (min-width: 1040px) {
+    .container{
+        margin: 0 auto;
+    }
+
+    .shape__big{
+        width: 500px;
+        height: 500px;
+    }
+
+    .shape__small{
+        width: 400px;
+        height: 400px;
+    }
+
+    .home__container{
+        padding-top: 2rem;
+    }
+
+    .home__img{
+        width: 380px;
+    }
+
+    .home__car{
+        column-gap: 7rem;
+    
+        &-icon{
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .about__container{
+        column-gap: 6rem;
+        align-items: center;
+    }
+
+    .about__group,
+    .about__img{
+        width: 480px;
+    }
+
+    .about__card{
+        width: 190px;
+        padding: 1rem 1.25rem;
+    }
+
+    .about__description{
+        padding-right: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .popular__container{
+        width: 875px;
+        padding-top: 3rem;
+    }
+
+    .popular__card{
+        width: 258px !important;
+        border-radius: 1.25rem;
+        margin-bottom: 5rem;
+    }
+
+    .popular__img{
+        width: 180px;
+        margin: .75rem 0 1.25rem 2rem;
+    }
+
+    .footer__container{
+        padding: 2rem 0 3rem;
+    }
+
+    .features__img{
+        width: 200px;
+    }
+
+    .features__card{
+        width: 127px;
+        padding: .75rem 2.5rem;
+    
+    
+        &-1{
+            left: -1rem;
+        }
+
+        &-2{
+            right: -2.5rem;
+        }
+    
+        &-3{
+            bottom: 7rem;
+            left: -1rem;
+        }
+    }
+
+    .features__map{
+        width: 650px;
+        top: 11rem;
+    }
+
+    .featured__container{
+        padding-bottom: 2.5rem;
+    }
+
+    .featured__filters{
+        column-gap: 2rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .featured__item{
+        width: 52px;
+        height: 52px;
+    
+        & img{
+            width: 2rem;
+        }
+    }
+
+    .featured__content{
+        grid-template-columns: repeat(3, 248px);
+        gap: 4rem;
+    }
+
+    .offer__container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .offer__data,
+    .offer__img{
+        text-align: center;
+    }
+
+    .offer__data{
+        margin-bottom: 0;
+    }
+
+    .offer__description{
+        padding-right: 6rem;
+    }
+
+    .offer__img{
+        width: 450px;
+    }
+
+    .logos__container{
+        grid-template-columns: repeat(6, max-content);
+    }
+
+    .logos__img{
+        width: 50px;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+    }
+
+    .footer_logo{
+        column-gap: .5rem;
+
+        & i{
+            font-size: 2rem;
+        }
+    }
+
+    .footer__title{
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__links{
+        row-gap: .75rem;
+    }
+
+    .footer__social-link{
+        font-size: 1.5rem;
+    }
+
+    .footer__copy{
+        margin-top: 8rem;
+        padding-bottom: 1rem;
+    }
+
+    .scrollup{
+        right: 3rem;
+    }
+}
