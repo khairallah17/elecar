@@ -1273,18 +1273,22 @@ img {
   background-color: #4178dc;
 }
 
-html::-webkit-scrollbar {
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
   width: .6rem;
   background-color: #27282a;
   border-radius: 1rem;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #3b3c40;
   border-radius: 1rem;
 }
 
-html::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background-color: #4e5155;
 }
 
